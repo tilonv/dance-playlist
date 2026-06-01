@@ -211,7 +211,7 @@
   }
 
   var lastTs      = null;   // last timestamp received from Firebase
-  var TIMEOUT_SEC = 60;     // blank page after this many seconds of no update
+  var TIMEOUT_SEC = 30;     // blank page after this many seconds of no update
 
   function checkInactivity() {
     if (lastTs === null) return;  // never received data yet — keep spinner
